@@ -8,18 +8,17 @@
   <meta name="author" content="Frank">
   <meta name="robots" content="index, follow">
   <title>Bangbangde Playground</title>
-  <script src="lib/init.js"></script>
+  <script src="../lib/init.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to my playground!</h1>
-  </header>
-  <main>
-    <h2>Util pages</h2>
-    <ul>
-      <li><a href="./util-linear-gradient/index.html">css线性渐变可视化</a></li>
-      <li><a href="./util-icons/index.html">生成不同尺寸的图标（支持svg）</a></li>
-    </ul>
-  </main>
+  <div id="app">loading...</div>
+
+  <script type="module">
+    import { createApp, ref } from 'vue';
+    import Index from './index.js';
+
+    createApp(Index).mount('#app');
+  </script>
 </body>
 </html>
